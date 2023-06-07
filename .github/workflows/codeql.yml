@@ -58,6 +58,8 @@ jobs:
     # If this step fails, then you should remove it and run the build manually (see below)
     - name: Set up 
       uses: actions/setup-java@v2
+      with:
+           java-version: 11 
       
     - name: Autobuild
       run: |
